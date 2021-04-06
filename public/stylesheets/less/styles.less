@@ -1,0 +1,43 @@
+@background_color:#faf3e0;
+@background_gradient: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(250,243,224,0.80) 25%);
+@background_image: url("../background_img.jpg") no-repeat center center fixed;
+@dark_nude:#966c3b;
+@light_nude:#eabf9f;
+@brown:#544329;
+@font-family: Tahoma;
+
+html { 
+    background: @background_image;
+};
+body {
+    background: @background_gradient;
+    font-family: @font-family;
+    color: @brown;
+
+};
+form {
+    padding-right: 40%;};
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 1em;
+    list-style: none;
+    background: @background_color;
+    border: solid 1px;
+    border-color: @brown;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px @light_nude;
+};
+a:any-link {
+    color: @dark_nude;
+};
+a:any-link:hover {
+    color: @light_nude;  
+};
+.btn {
+    background-color: @dark_nude;
+    border-color: @dark_nude;
+};
+.btn:hover {
+    background-color: @light_nude;
+    border-color: @light_nude;
+};
